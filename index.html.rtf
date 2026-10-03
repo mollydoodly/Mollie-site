@@ -1,0 +1,631 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw16840\paperh23820\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Molly the Labradoodle & Friends | Books, Stories & YouTube</title>\
+    <script src="https://cdn.tailwindcss.com"></script>\
+    <link rel="preconnect" href="https://fonts.googleapis.com">\
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">\
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">\
+\
+    <script>\
+        tailwind.config = \{\
+            theme: \{\
+                extend: \{\
+                    colors: \{\
+                        cream: \{\
+                            50: '#FFFDF9',\
+                            100: '#FAF5EC',\
+                            200: '#F5EBE0',\
+                        \},\
+                        highland: \{\
+                            50: '#E8F3EE',\
+                            100: '#C7E4D6',\
+                            500: '#2E7D5B',\
+                            700: '#1B4D38',\
+                            900: '#0F3022',\
+                        \},\
+                        heather: \{\
+                            100: '#F1E6F5',\
+                            300: '#D5B4E3',\
+                            500: '#9B51E0',\
+                            700: '#6C2B9B',\
+                        \},\
+                        amberGold: \{\
+                            300: '#FCD34D',\
+                            400: '#FBBF24',\
+                            500: '#F59E0B',\
+                            600: '#D97706',\
+                        \},\
+                        cocoBrown: \{\
+                            400: '#A1724E',\
+                            600: '#6E472B',\
+                            800: '#422714',\
+                        \}\
+                    \},\
+                    fontFamily: \{\
+                        fredoka: ['Fredoka', 'sans-serif'],\
+                        quicksand: ['Quicksand', 'sans-serif'],\
+                    \},\
+                    borderRadius: \{\
+                        '4xl': '2rem',\
+                        '5xl': '2.5rem',\
+                    \}\
+                \}\
+            \}\
+        \}\
+    </script>\
+\
+    <style>\
+        body \{\
+            font-family: 'Quicksand', sans-serif;\
+            background-color: #FAF5EC;\
+            color: #422714;\
+            overflow-x: hidden;\
+        \}\
+\
+        h1, h2, h3, h4, .font-heading \{\
+            font-family: 'Fredoka', cursive;\
+        \}\
+\
+        .paw-print \{\
+            position: absolute;\
+            opacity: 0.15;\
+            pointer-events: none;\
+            user-select: none;\
+        \}\
+\
+        .tab-content \{\
+            display: none;\
+            opacity: 0;\
+            transition: opacity 0.3s ease-in-out;\
+        \}\
+        .tab-content.active \{\
+            display: block;\
+            opacity: 1;\
+        \}\
+\
+        @keyframes pulseGlow \{\
+            0%, 100% \{ transform: scale(1); filter: drop-shadow(0 0 5px rgba(245, 158, 11, 0.5)); \}\
+            50% \{ transform: scale(1.05); filter: drop-shadow(0 0 15px rgba(245, 158, 11, 0.8)); \}\
+        \}\
+        .magic-glow \{\
+            animation: pulseGlow 3s infinite ease-in-out;\
+        \}\
+\
+        .modal-blur \{\
+            backdrop-filter: blur(8px);\
+        \}\
+    </style>\
+</head>\
+<body class="min-h-screen flex flex-col justify-between selection:bg-amberGold-300 selection:text-cocoBrown-800">\
+\
+    <!-- Header & Navigation -->\
+    <header class="sticky top-0 z-50 bg-cream-50/90 backdrop-blur-md border-b-4 border-amberGold-400 shadow-sm transition-all duration-300">\
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\
+            <div class="flex items-center justify-between h-20">\
+                \
+                <a href="#" class="flex items-center gap-3 group">\
+                    <div class="w-12 h-12 bg-amberGold-400 rounded-full flex items-center justify-center text-cocoBrown-800 font-bold text-2xl shadow-md transform group-hover:rotate-12 transition-transform">\
+                        <i class="fa-solid fa-dog"></i>\
+                    </div>\
+                    <div>\
+                        <span class="text-2xl font-bold text-cocoBrown-800 tracking-wide font-heading block leading-none">MOLLY</span>\
+                        <span class="text-xs font-semibold text-highland-700 uppercase tracking-widest">Labradoodle Adventures</span>\
+                    </div>\
+                </a>\
+\
+                <nav class="hidden md:flex items-center gap-2 lg:gap-6 font-semibold text-cocoBrown-800">\
+                    <a href="#about" class="px-4 py-2 rounded-full hover:bg-highland-100 transition-colors">Meet Molly</a>\
+                    <a href="#books" class="px-4 py-2 rounded-full hover:bg-highland-100 transition-colors">Storybooks</a>\
+                    <a href="#weekly-story" class="px-4 py-2 rounded-full hover:bg-highland-100 transition-colors">Weekly Story</a>\
+                    <a href="#youtube" class="px-4 py-2 rounded-full hover:bg-highland-100 transition-colors">YouTube Channel</a>\
+                </nav>\
+\
+                <div class="hidden sm:flex items-center gap-3">\
+                    <a href="#fan-club" class="bg-heather-500 hover:bg-heather-700 text-white font-bold px-5 py-2.5 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all text-sm flex items-center gap-2">\
+                        <i class="fa-solid fa-heart"></i>\
+                        <span>Join Paws Club</span>\
+                    </a>\
+                </div>\
+\
+                <div class="md:hidden flex items-center">\
+                    <button id="mobile-menu-btn" class="text-cocoBrown-800 text-2xl p-2 rounded-lg hover:bg-cream-200 focus:outline-none">\
+                        <i class="fa-solid fa-bars"></i>\
+                    </button>\
+                </div>\
+            </div>\
+        </div>\
+\
+        <div id="mobile-menu" class="hidden md:hidden bg-cream-100 border-b-2 border-amberGold-400 px-4 pt-2 pb-6 space-y-3">\
+            <a href="#about" class="block px-4 py-2 rounded-xl text-cocoBrown-800 font-semibold hover:bg-highland-100">Meet Molly</a>\
+            <a href="#books" class="block px-4 py-2 rounded-xl text-cocoBrown-800 font-semibold hover:bg-highland-100">Storybooks</a>\
+            <a href="#weekly-story" class="block px-4 py-2 rounded-xl text-cocoBrown-800 font-semibold hover:bg-highland-100">Weekly Story</a>\
+            <a href="#youtube" class="block px-4 py-2 rounded-xl text-cocoBrown-800 font-semibold hover:bg-highland-100">YouTube Channel</a>\
+            <a href="#fan-club" class="block w-full text-center bg-heather-500 text-white font-bold py-3 rounded-full shadow-md">Join Paws Club</a>\
+        </div>\
+    </header>\
+\
+    <main class="flex-grow">\
+        <!-- Hero Section with Banners -->\
+        <section id="about" class="relative py-12 lg:py-20 bg-gradient-to-b from-cream-100 via-highland-50 to-cream-50 overflow-hidden">\
+            <i class="fa-solid fa-paw paw-print text-cocoBrown-600 top-12 left-8 text-4xl transform -rotate-12"></i>\
+            <i class="fa-solid fa-paw paw-print text-cocoBrown-600 top-40 right-12 text-5xl transform rotate-45"></i>\
+            <i class="fa-solid fa-cloud text-white/70 text-7xl absolute top-6 right-1/4 animate-pulse"></i>\
+\
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">\
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">\
+                    \
+                    <div class="lg:col-span-7 text-center lg:text-left space-y-6">\
+                        <div class="inline-flex items-center gap-2 bg-amberGold-300/80 text-cocoBrown-800 px-4 py-1.5 rounded-full font-bold text-sm tracking-wide uppercase border border-amberGold-400 shadow-sm">\
+                            <i class="fa-solid fa-crown text-amberGold-600"></i>\
+                            <span>Scottish Countryside Tales</span>\
+                        </div>\
+                        \
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-cocoBrown-800 leading-tight">\
+                            Molly the Labradoodle <span class="text-highland-500 block sm:inline">&amp; Friends!</span>\
+                        </h1>\
+\
+                        <p class="text-lg sm:text-xl text-cocoBrown-600 font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">\
+                            Tail-wagging adventures across the Scottish Highlands! Join **Molly**, her adventurous pal **Coco**, **Queen Carlotta the Bee**, and **Hamish the Owl** as they solve magical cottage mysteries.\
+                        </p>\
+\
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">\
+                            <a href="#weekly-story" class="w-full sm:w-auto bg-amberGold-400 hover:bg-amberGold-500 text-cocoBrown-800 font-extrabold px-8 py-4 rounded-3xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all text-center text-lg flex items-center justify-center gap-3">\
+                                <i class="fa-solid fa-play text-xl"></i>\
+                                <span>Watch Latest Story</span>\
+                            </a>\
+                            <a href="#books" class="w-full sm:w-auto bg-highland-500 hover:bg-highland-700 text-white font-extrabold px-8 py-4 rounded-3xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all text-center text-lg flex items-center justify-center gap-3">\
+                                <i class="fa-solid fa-book-open text-xl"></i>\
+                                <span>Explore 4 Books</span>\
+                            </a>\
+                        </div>\
+                    </div>\
+\
+                    <div class="lg:col-span-5 relative">\
+                        <div class="relative mx-auto max-w-md bg-white p-4 sm:p-6 rounded-5xl shadow-2xl border-8 border-amberGold-300 transform rotate-1 hover:rotate-0 transition-transform duration-500 magic-glow">\
+                            <div class="absolute -top-4 -right-4 bg-heather-500 text-white font-bold text-xs px-4 py-2 rounded-full shadow-lg transform rotate-12 flex items-center gap-1">\
+                                <i class="fa-solid fa-sparkles"></i> New Story Out Now!\
+                            </div>\
+                            \
+                            <div class="relative aspect-square rounded-4xl overflow-hidden bg-amber-100 border-4 border-cream-200">\
+                                <img src="https://placehold.co/600x600/FAF5EC/6E472B?text=Molly+%26+Coco+in+Highlands" alt="Molly the Labradoodle and Coco" class="w-full h-full object-cover">\
+                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-cocoBrown-800/80 via-cocoBrown-800/40 to-transparent p-6 text-white text-center">\
+                                    <p class="font-heading text-xl text-amberGold-300">"One for all, and all for one!"</p>\
+                                    <p class="text-xs text-cream-100 mt-1">Molly &amp; Coco on their way to Mim's Cottage</p>\
+                                </div>\
+                            </div>\
+\
+                            <div class="mt-4 bg-cream-100 rounded-2xl p-3 flex items-center justify-between border border-amberGold-300">\
+                                <div class="flex items-center gap-3">\
+                                    <button onclick="playDogBarkSound()" class="w-10 h-10 bg-amberGold-400 hover:bg-amberGold-500 rounded-full flex items-center justify-center text-cocoBrown-800 text-lg shadow-sm">\
+                                        <i class="fa-solid fa-volume-high"></i>\
+                                    </button>\
+                                    <span class="text-xs font-bold text-cocoBrown-800">Hear Molly's Highland Woof!</span>\
+                                </div>\
+                                <span class="text-xs font-semibold text-highland-700 bg-highland-100 px-2.5 py-1 rounded-lg">Audio Sound</span>\
+                            </div>\
+                        </div>\
+                    </div>\
+\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- 4 Children's Books Showcase Section -->\
+        <section id="books" class="py-16 bg-cream-50 relative">\
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\
+                \
+                <div class="text-center max-w-3xl mx-auto mb-12">\
+                    <span class="text-highland-700 font-bold tracking-wider uppercase text-sm bg-highland-100 px-4 py-1.5 rounded-full inline-block mb-3">The Storybook Collection</span>\
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-cocoBrown-800">4 Magical Highland Books</h2>\
+                    <p class="text-cocoBrown-600 mt-3 text-base sm:text-lg">Follow Molly and her friends through four enchanting illustrated children's books full of kindness, courage, and honey!</p>\
+                </div>\
+\
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">\
+                    \
+                    <!-- Book 1 -->\
+                    <div class="bg-white rounded-4xl p-5 shadow-xl border-2 border-cream-200 hover:border-amberGold-400 transition-all duration-300 flex flex-col justify-between group transform hover:-translate-y-2">\
+                        <div>\
+                            <div class="relative aspect-[3/4] rounded-3xl overflow-hidden bg-amber-50 mb-5 border-4 border-amberGold-300 shadow-inner">\
+                                <img src="https://placehold.co/400x533/FFFDF9/2E7D5B?text=Book+1:+Molly+%26+The+Honey+Bee+Queen" alt="Book 1 Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">\
+                                <span class="absolute top-3 left-3 bg-amberGold-400 text-cocoBrown-800 font-bold text-xs px-3 py-1 rounded-full shadow">Book #1</span>\
+                            </div>\
+                            <h3 class="text-xl font-bold text-cocoBrown-800 group-hover:text-highland-500 transition-colors leading-snug">Molly &amp; the Honey Bee Queen</h3>\
+                            <p class="text-xs text-cocoBrown-600 mt-2 line-clamp-3">Molly apologises to Queen Carlotta and ventures out to collect secret honey to help heal poor Elle the Bunny with Wendy the Witch.</p>\
+                        </div>\
+                        <div class="mt-6 pt-4 border-t border-cream-200 space-y-3">\
+                            <div class="flex items-center justify-between">\
+                                <span class="text-xs font-bold text-highland-700 bg-highland-100 px-2.5 py-1 rounded-md">Available Now</span>\
+                                <span class="text-sm font-bold text-cocoBrown-800">\'a36.99</span>\
+                            </div>\
+                            <button onclick="openBookModal('Molly & the Honey Bee Queen', 'Molly apologises to Queen Carlotta and ventures out to collect secret honey to help heal poor Elle the Bunny with Wendy the Witch.', 'https://placehold.co/400x533/FFFDF9/2E7D5B?text=Book+1:+Molly+%26+The+Honey+Bee+Queen')" class="w-full bg-amberGold-400 hover:bg-amberGold-500 text-cocoBrown-800 font-bold py-2.5 rounded-2xl shadow transition-colors text-sm flex items-center justify-center gap-2">\
+                                <i class="fa-solid fa-basket-shopping"></i> Pre-order / Buy Now\
+                            </button>\
+                        </div>\
+                    </div>\
+\
+                    <!-- Book 2 -->\
+                    <div class="bg-white rounded-4xl p-5 shadow-xl border-2 border-cream-200 hover:border-amberGold-400 transition-all duration-300 flex flex-col justify-between group transform hover:-translate-y-2">\
+                        <div>\
+                            <div class="relative aspect-[3/4] rounded-3xl overflow-hidden bg-blue-50 mb-5 border-4 border-blue-200 shadow-inner">\
+                                <img src="https://placehold.co/400x533/FAF5EC/1B4D38?text=Book+2:+The+Secret+of+the+Loch" alt="Book 2 Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">\
+                                <span class="absolute top-3 left-3 bg-blue-400 text-white font-bold text-xs px-3 py-1 rounded-full shadow">Book #2</span>\
+                            </div>\
+                            <h3 class="text-xl font-bold text-cocoBrown-800 group-hover:text-highland-500 transition-colors leading-snug">The Secret of the Loch</h3>\
+                            <p class="text-xs text-cocoBrown-600 mt-2 line-clamp-3">A misty morning stroll along the Scottish Loch leads Coco and Molly to a friendly surprise hiding near the old wooden pier.</p>\
+                        </div>\
+                        <div class="mt-6 pt-4 border-t border-cream-200 space-y-3">\
+                            <div class="flex items-center justify-between">\
+                                <span class="text-xs font-bold text-heather-700 bg-heather-100 px-2.5 py-1 rounded-md">Coming Soon</span>\
+                                <span class="text-sm font-bold text-cocoBrown-800">\'a36.99</span>\
+                            </div>\
+                            <button onclick="openBookModal('The Secret of the Loch', 'A misty morning stroll along the Scottish Loch leads Coco and Molly to a friendly surprise hiding near the old wooden pier.', 'https://placehold.co/400x533/FAF5EC/1B4D38?text=Book+2:+The+Secret+of+the+Loch')" class="w-full bg-cream-200 hover:bg-amberGold-300 text-cocoBrown-800 font-bold py-2.5 rounded-2xl transition-colors text-sm flex items-center justify-center gap-2">\
+                                <i class="fa-solid fa-clock"></i> Pre-Order Today\
+                            </button>\
+                        </div>\
+                    </div>\
+\
+                    <!-- Book 3 -->\
+                    <div class="bg-white rounded-4xl p-5 shadow-xl border-2 border-cream-200 hover:border-amberGold-400 transition-all duration-300 flex flex-col justify-between group transform hover:-translate-y-2">\
+                        <div>\
+                            <div class="relative aspect-[3/4] rounded-3xl overflow-hidden bg-amber-50 mb-5 border-4 border-amberGold-300 shadow-inner">\
+                                <img src="https://placehold.co/400x533/FFFDF9/6E472B?text=Book+3:+Hamish+the+Wise+Owl" alt="Book 3 Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">\
+                                <span class="absolute top-3 left-3 bg-heather-500 text-white font-bold text-xs px-3 py-1 rounded-full shadow">Book #3</span>\
+                            </div>\
+                            <h3 class="text-xl font-bold text-cocoBrown-800 group-hover:text-highland-500 transition-colors leading-snug">Hamish the Wise Owl</h3>\
+                            <p class="text-xs text-cocoBrown-600 mt-2 line-clamp-3">Perched high on his favorite pine branch, Hamish guides the three musketeers down the hill back toward home.</p>\
+                        </div>\
+                        <div class="mt-6 pt-4 border-t border-cream-200 space-y-3">\
+                            <div class="flex items-center justify-between">\
+                                <span class="text-xs font-bold text-heather-700 bg-heather-100 px-2.5 py-1 rounded-md">Coming Soon</span>\
+                                <span class="text-sm font-bold text-cocoBrown-800">\'a36.99</span>\
+                            </div>\
+                            <button onclick="openBookModal('Hamish the Wise Owl', 'Perched high on his favorite pine branch, Hamish guides the three musketeers down the hill back toward home.', 'https://placehold.co/400x533/FFFDF9/6E472B?text=Book+3:+Hamish+the+Wise+Owl')" class="w-full bg-cream-200 hover:bg-amberGold-300 text-cocoBrown-800 font-bold py-2.5 rounded-2xl transition-colors text-sm flex items-center justify-center gap-2">\
+                                <i class="fa-solid fa-clock"></i> Pre-Order Today\
+                            </button>\
+                        </div>\
+                    </div>\
+\
+                    <!-- Book 4 -->\
+                    <div class="bg-white rounded-4xl p-5 shadow-xl border-2 border-cream-200 hover:border-amberGold-400 transition-all duration-300 flex flex-col justify-between group transform hover:-translate-y-2">\
+                        <div>\
+                            <div class="relative aspect-[3/4] rounded-3xl overflow-hidden bg-green-50 mb-5 border-4 border-highland-100 shadow-inner">\
+                                <img src="https://placehold.co/400x533/FAF5EC/D97706?text=Book+4:+The+Great+Cottage+Adventure" alt="Book 4 Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">\
+                                <span class="absolute top-3 left-3 bg-highland-500 text-white font-bold text-xs px-3 py-1 rounded-full shadow">Book #4</span>\
+                            </div>\
+                            <h3 class="text-xl font-bold text-cocoBrown-800 group-hover:text-highland-500 transition-colors leading-snug">The Great Cottage Adventure</h3>\
+                            <p class="text-xs text-cocoBrown-600 mt-2 line-clamp-3">Mim tries her best to fix the stubborn front door bell while Anekka, Molly, Coco, and Elle finally arrive safely back at Mim's Cottage.</p>\
+                        </div>\
+                        <div class="mt-6 pt-4 border-t border-cream-200 space-y-3">\
+                            <div class="flex items-center justify-between">\
+                                <span class="text-xs font-bold text-heather-700 bg-heather-100 px-2.5 py-1 rounded-md">Coming Soon</span>\
+                                <span class="text-sm font-bold text-cocoBrown-800">\'a36.99</span>\
+                            </div>\
+                            <button onclick="openBookModal('The Great Cottage Adventure', 'Mim tries her best to fix the stubborn front door bell while Anekka, Molly, Coco, and Elle finally arrive safely back at Mim\\'s Cottage.', 'https://placehold.co/400x533/FAF5EC/D97706?text=Book+4:+The+Great+Cottage+Adventure')" class="w-full bg-cream-200 hover:bg-amberGold-300 text-cocoBrown-800 font-bold py-2.5 rounded-2xl transition-colors text-sm flex items-center justify-center gap-2">\
+                                <i class="fa-solid fa-clock"></i> Pre-Order Today\
+                            </button>\
+                        </div>\
+                    </div>\
+\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- Weekly Story & Interactive Section -->\
+        <section id="weekly-story" class="py-16 bg-highland-50 relative overflow-hidden">\
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">\
+                \
+                <div class="text-center max-w-3xl mx-auto mb-10">\
+                    <span class="text-heather-700 font-bold tracking-wider uppercase text-sm bg-heather-100 px-4 py-1.5 rounded-full inline-block mb-3">Interactive Corner</span>\
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-cocoBrown-800">Weekly Storytime with Molly</h2>\
+                    <p class="text-cocoBrown-600 mt-3 text-base">Watch the animated story video or read along with this week's excerpt right here!</p>\
+                </div>\
+\
+                <div class="flex justify-center mb-8">\
+                    <div class="bg-cream-100 p-1.5 rounded-full border-2 border-amberGold-300 shadow-md inline-flex gap-2">\
+                        <button id="tab-video-btn" onclick="switchTab('video')" class="px-6 py-2.5 rounded-full font-bold text-sm transition-all bg-amberGold-400 text-cocoBrown-800 shadow">\
+                            <i class="fa-brands fa-youtube mr-2 text-red-600"></i> Video Story\
+                        </button>\
+                        <button id="tab-read-btn" onclick="switchTab('read')" class="px-6 py-2.5 rounded-full font-bold text-sm transition-all text-cocoBrown-600 hover:text-cocoBrown-800">\
+                            <i class="fa-solid fa-book-reader mr-2 text-highland-700"></i> Read Excerpt\
+                        </button>\
+                    </div>\
+                </div>\
+\
+                <div id="tab-video" class="tab-content active">\
+                    <div class="max-w-4xl mx-auto bg-white p-4 sm:p-6 rounded-5xl shadow-2xl border-4 border-amberGold-300">\
+                        <div class="relative aspect-video rounded-3xl overflow-hidden bg-cocoBrown-800 shadow-inner flex items-center justify-center group">\
+                            <img src="https://placehold.co/1280x720/422714/F59E0B?text=Play+Weekly+Storytime+Video" alt="Video Thumbnail" class="w-full h-full object-cover">\
+                            \
+                            <button onclick="playVideoDemo()" class="absolute w-20 h-20 bg-amberGold-400 hover:bg-amberGold-500 text-cocoBrown-800 rounded-full flex items-center justify-center text-3xl shadow-2xl transform group-hover:scale-110 transition-transform">\
+                                <i class="fa-solid fa-play ml-1"></i>\
+                            </button>\
+\
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 text-white flex items-center justify-between">\
+                                <div>\
+                                    <h4 class="font-bold text-lg text-amberGold-300">Episode 12: Returning to Mim's Cottage</h4>\
+                                    <p class="text-xs text-cream-100">Length: 4 mins \'95 Narrated with magical sound effects</p>\
+                                </div>\
+                                <span class="bg-red-600 text-white font-bold text-xs px-3 py-1 rounded-full uppercase">HD Video</span>\
+                            </div>\
+                        </div>\
+\
+                        <div class="mt-4 flex flex-wrap items-center justify-between gap-4 px-2">\
+                            <div class="flex items-center gap-3">\
+                                <button onclick="toggleAudioNarration()" id="audio-narrate-btn" class="bg-highland-100 hover:bg-highland-500 hover:text-white text-highland-700 font-bold px-4 py-2 rounded-2xl text-xs flex items-center gap-2 transition-colors">\
+                                    <i class="fa-solid fa-volume-low"></i>\
+                                    <span id="audio-btn-text">Listen to Audio Narration</span>\
+                                </button>\
+                            </div>\
+                            <a href="#youtube" class="text-xs font-bold text-heather-700 hover:underline flex items-center gap-1">\
+                                <span>See all YouTube episodes</span>\
+                                <i class="fa-solid fa-arrow-right"></i>\
+                            </a>\
+                        </div>\
+                    </div>\
+                </div>\
+\
+                <div id="tab-read" class="tab-content">\
+                    <div class="max-w-3xl mx-auto bg-cream-50 p-6 sm:p-10 rounded-5xl shadow-xl border-4 border-amberGold-300 relative">\
+                        <div class="flex justify-between items-center mb-6 pb-4 border-b border-cream-200">\
+                            <span class="text-xs font-bold text-cocoBrown-600 uppercase tracking-wider">Weekly Excerpt</span>\
+                            <div class="flex items-center gap-2">\
+                                <span class="text-xs font-semibold text-cocoBrown-600">Text Size:</span>\
+                                <button onclick="adjustTextSize(-2)" class="w-8 h-8 bg-white border border-cream-200 rounded-lg text-xs font-bold hover:bg-amberGold-300">-</button>\
+                                <button onclick="adjustTextSize(2)" class="w-8 h-8 bg-white border border-cream-200 rounded-lg text-xs font-bold hover:bg-amberGold-300">+</button>\
+                            </div>\
+                        </div>\
+\
+                        <div id="story-excerpt-text" class="text-base sm:text-lg text-cocoBrown-800 leading-relaxed space-y-4">\
+                            <p class="font-heading text-2xl text-highland-700">"One for all, and all for one!" barked Coco happily.</p>\
+                            <p>\
+                                Molly, Coco, and poor little Elle the Bunny marched side-by-side like three cheerful musketeers. The golden sun was setting over the calm loch, casting warm honey-colored reflections across the water.\
+                            </p>\
+                            <p>\
+                                Up ahead stood Mim\'92s cozy thatched cottage. Smoke curled gently from the chimney, and beside the front door stood Mim herself, tugging furiously at a brass bell rope.\
+                            </p>\
+                            <p class="italic text-cocoBrown-600 bg-cream-100 p-4 rounded-2xl border-l-4 border-amberGold-400">\
+                                "Darn bell! It\'92s completely stuck!" exclaims Mim, shaking her head as Anekka smiles warmly beside her.\
+                            </p>\
+                        </div>\
+\
+                        <div class="mt-8 pt-4 border-t border-cream-200 flex items-center justify-between text-xs text-cocoBrown-600">\
+                            <span>Written by Molly's Family</span>\
+                            <span class="font-bold text-highland-700"><i class="fa-solid fa-check-circle"></i> Complete Story in Book #1</span>\
+                        </div>\
+                    </div>\
+                </div>\
+\
+            </div>\
+        </section>\
+\
+        <!-- YouTube Subscription Banner -->\
+        <section id="youtube" class="py-16 bg-cream-100 relative">\
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\
+                \
+                <div class="bg-gradient-to-r from-red-600 via-red-500 to-amberGold-500 rounded-5xl p-8 sm:p-12 shadow-2xl text-white mb-16 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">\
+                    <i class="fa-brands fa-youtube absolute -right-6 -bottom-10 text-white/10 text-9xl pointer-events-none"></i>\
+\
+                    <div class="space-y-3 text-center md:text-left max-w-xl">\
+                        <span class="bg-white/20 text-white font-bold text-xs uppercase px-3 py-1 rounded-full tracking-wider">Official Channel</span>\
+                        <h3 class="text-3xl sm:text-4xl font-extrabold font-heading">Subscribe to Molly on YouTube!</h3>\
+                        <p class="text-white/90 text-sm sm:text-base">Watch weekly Highland adventures, real labradoodle fun, and narrated animated bedtime stories!</p>\
+                    </div>\
+\
+                    <a href="https://www.youtube.com/?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="bg-white hover:bg-cream-100 text-red-600 font-extrabold px-8 py-4 rounded-3xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all text-lg flex items-center gap-3 shrink-0">\
+                        <i class="fa-brands fa-youtube text-2xl"></i>\
+                        <span>Subscribe Now</span>\
+                    </a>\
+                </div>\
+\
+            </div>\
+        </section>\
+\
+        <!-- Paws Club Signup -->\
+        <section id="fan-club" class="py-16 bg-cream-50 relative">\
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">\
+                <div class="bg-white rounded-5xl p-8 sm:p-12 shadow-2xl border-4 border-amberGold-400 text-center relative overflow-hidden">\
+                    \
+                    <div class="w-16 h-16 bg-heather-100 text-heather-700 rounded-full flex items-center justify-center text-3xl mx-auto mb-4 shadow-sm">\
+                        <i class="fa-solid fa-paw"></i>\
+                    </div>\
+\
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-cocoBrown-800">Join Molly's Pawsome Club!</h2>\
+                    <p class="text-cocoBrown-600 text-sm sm:text-base mt-2 max-w-xl mx-auto">\
+                        Get weekly story excerpts, downloadable coloring pages, new book announcements, and secret videos sent straight to your inbox!\
+                    </p>\
+\
+                    <form id="paws-club-form" onsubmit="handleClubSignup(event)" class="mt-8 max-w-md mx-auto space-y-4">\
+                        <div class="flex flex-col sm:flex-row gap-3">\
+                            <input type="text" id="fan-name" placeholder="Little Reader's Name" required class="flex-grow px-5 py-3.5 rounded-2xl border-2 border-cream-200 focus:border-amberGold-400 focus:outline-none text-cocoBrown-800 text-sm">\
+                            <input type="email" id="fan-email" placeholder="Parent's Email Address" required class="flex-grow px-5 py-3.5 rounded-2xl border-2 border-cream-200 focus:border-amberGold-400 focus:outline-none text-cocoBrown-800 text-sm">\
+                        </div>\
+                        <button type="submit" class="w-full bg-amberGold-400 hover:bg-amberGold-500 text-cocoBrown-800 font-extrabold py-4 rounded-2xl shadow-lg hover:shadow-xl transition-all text-base flex items-center justify-center gap-2">\
+                            <i class="fa-solid fa-paper-plane"></i> Join Club &amp; Get Free Coloring Book\
+                        </button>\
+                    </form>\
+\
+                    <div id="signup-success" class="hidden mt-6 bg-highland-100 text-highland-900 p-4 rounded-2xl border border-highland-500">\
+                        <p class="font-bold text-base"> Woof-tastic! You're in the Club!</p>\
+                        <p class="text-xs mt-1">Check your parent's email for your free downloadable Molly Coloring Page!</p>\
+                    </div>\
+\
+                </div>\
+            </div>\
+        </section>\
+    </main>\
+\
+    <!-- Footer -->\
+    <footer class="bg-cocoBrown-800 text-cream-100 py-12 border-t-8 border-amberGold-400">\
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">\
+                \
+                <div class="space-y-3 md:col-span-2">\
+                    <div class="flex items-center gap-3">\
+                        <div class="w-10 h-10 bg-amberGold-400 rounded-full flex items-center justify-center text-cocoBrown-800 font-bold text-xl">\
+                            <i class="fa-solid fa-dog"></i>\
+                        </div>\
+                        <span class="text-2xl font-bold font-heading text-amberGold-300">Molly the Labradoodle</span>\
+                    </div>\
+                    <p class="text-xs text-cream-200 max-w-sm leading-relaxed">\
+                        Heartwarming children's stories set in the charming countryside of Scotland. Dedicated to bringing smiles, kindness, and fun to readers everywhere!\
+                    </p>\
+                </div>\
+\
+                <div>\
+                    <h4 class="font-bold text-amberGold-300 text-sm uppercase tracking-wider mb-3">Quick Navigation</h4>\
+                    <ul class="space-y-2 text-xs">\
+                        <li><a href="#about" class="hover:underline">Meet Molly &amp; Friends</a></li>\
+                        <li><a href="#books" class="hover:underline">The 4 Book Series</a></li>\
+                        <li><a href="#weekly-story" class="hover:underline">Weekly Storytime</a></li>\
+                        <li><a href="#youtube" class="hover:underline">YouTube Channel</a></li>\
+                    </ul>\
+                </div>\
+\
+                <div>\
+                    <h4 class="font-bold text-amberGold-300 text-sm uppercase tracking-wider mb-3">Connect With Us</h4>\
+                    <div class="flex gap-3 text-lg">\
+                        <a href="https://www.youtube.com" target="_blank" class="w-9 h-9 bg-cocoBrown-600 hover:bg-amberGold-400 hover:text-cocoBrown-800 rounded-full flex items-center justify-center transition-colors">\
+                            <i class="fa-brands fa-youtube"></i>\
+                        </a>\
+                        <a href="#" class="w-9 h-9 bg-cocoBrown-600 hover:bg-amberGold-400 hover:text-cocoBrown-800 rounded-full flex items-center justify-center transition-colors">\
+                            <i class="fa-brands fa-facebook"></i>\
+                        </a>\
+                        <a href="#" class="w-9 h-9 bg-cocoBrown-600 hover:bg-amberGold-400 hover:text-cocoBrown-800 rounded-full flex items-center justify-center transition-colors">\
+                            <i class="fa-brands fa-instagram"></i>\
+                        </a>\
+                    </div>\
+                </div>\
+\
+            </div>\
+\
+            <div class="pt-8 border-t border-cocoBrown-600 text-center text-xs text-cream-200 flex flex-col sm:flex-row justify-between items-center gap-4">\
+                <p>&copy; <span id="year">2026</span> Molly the Labradoodle. All rights reserved.</p>\
+                <p class="flex items-center gap-1">Made with <i class="fa-solid fa-heart text-red-400"></i> for children everywhere</p>\
+            </div>\
+        </div>\
+    </footer>\
+\
+    <!-- Book Detail Modal -->\
+    <div id="book-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/60 modal-blur">\
+        <div class="bg-white rounded-5xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border-4 border-amberGold-300 animate-bounce-short">\
+            <button onclick="closeBookModal()" class="absolute top-4 right-4 w-10 h-10 bg-cream-100 hover:bg-cream-200 text-cocoBrown-800 rounded-full flex items-center justify-center text-lg font-bold">\
+                <i class="fa-solid fa-xmark"></i>\
+            </button>\
+            <div class="text-center space-y-4">\
+                <img id="modal-img" src="" alt="Book Cover" class="w-48 h-64 object-cover mx-auto rounded-3xl shadow-md border-4 border-amberGold-300">\
+                <h3 id="modal-title" class="text-2xl font-bold text-cocoBrown-800"></h3>\
+                <p id="modal-desc" class="text-xs text-cocoBrown-600 leading-relaxed"></p>\
+                \
+                <div class="pt-4 border-t border-cream-200 space-y-3">\
+                    <button onclick="alert('Redirecting to order checkout platform...')" class="w-full bg-amberGold-400 hover:bg-amberGold-500 text-cocoBrown-800 font-extrabold py-3 rounded-2xl shadow">\
+                        Proceed to Purchase / Pre-Order (\'a36.99)\
+                    </button>\
+                    <p class="text-xs text-cocoBrown-600">Free shipping across the UK on orders over \'a315!</p>\
+                </div>\
+            </div>\
+        </div>\
+    </div>\
+\
+    <script>\
+        document.getElementById('year').textContent = new Date().getFullYear();\
+\
+        const mobileBtn = document.getElementById('mobile-menu-btn');\
+        const mobileMenu = document.getElementById('mobile-menu');\
+        mobileBtn.addEventListener('click', () => \{\
+            mobileMenu.classList.toggle('hidden');\
+        \});\
+\
+        function switchTab(tabName) \{\
+            const videoTab = document.getElementById('tab-video');\
+            const readTab = document.getElementById('tab-read');\
+            const videoBtn = document.getElementById('tab-video-btn');\
+            const readBtn = document.getElementById('tab-read-btn');\
+\
+            if (tabName === 'video') \{\
+                videoTab.classList.add('active');\
+                readTab.classList.remove('active');\
+                videoBtn.className = "px-6 py-2.5 rounded-full font-bold text-sm transition-all bg-amberGold-400 text-cocoBrown-800 shadow";\
+                readBtn.className = "px-6 py-2.5 rounded-full font-bold text-sm transition-all text-cocoBrown-600 hover:text-cocoBrown-800";\
+            \} else \{\
+                readTab.classList.add('active');\
+                videoTab.classList.remove('active');\
+                readBtn.className = "px-6 py-2.5 rounded-full font-bold text-sm transition-all bg-amberGold-400 text-cocoBrown-800 shadow";\
+                videoBtn.className = "px-6 py-2.5 rounded-full font-bold text-sm transition-all text-cocoBrown-600 hover:text-cocoBrown-800";\
+            \}\
+        \}\
+\
+        let currentFontSize = 18;\
+        function adjustTextSize(delta) \{\
+            currentFontSize = Math.max(14, Math.min(26, currentFontSize + delta));\
+            const excerpt = document.getElementById('story-excerpt-text');\
+            excerpt.style.fontSize = `$\{currentFontSize\}px`;\
+        \}\
+\
+        function playDogBarkSound() \{\
+            try \{\
+                const ctx = new (window.AudioContext || window.webkitAudioContext)();\
+                const osc = ctx.createOscillator();\
+                const gain = ctx.createGain();\
+\
+                osc.type = 'sawtooth';\
+                osc.frequency.setValueAtTime(150, ctx.currentTime);\
+                osc.frequency.exponentialRampToValueAtTime(80, ctx.currentTime + 0.15);\
+\
+                gain.gain.setValueAtTime(0.3, ctx.currentTime);\
+                gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.15);\
+\
+                osc.connect(gain);\
+                gain.connect(ctx.destination);\
+\
+                osc.start();\
+                osc.stop(ctx.currentTime + 0.15);\
+            \} catch (e) \{\
+                console.log('Audio playback simulation initiated.');\
+            \}\
+        \}\
+\
+        let isNarrating = false;\
+        function toggleAudioNarration() \{\
+            const btnText = document.getElementById('audio-btn-text');\
+            isNarrating = !isNarrating;\
+            if (isNarrating) \{\
+                btnText.textContent = "Pause Narration Audio";\
+            \} else \{\
+                btnText.textContent = "Listen to Audio Narration";\
+            \}\
+        \}\
+\
+        function openBookModal(title, desc, imgSrc) \{\
+            document.getElementById('modal-title').textContent = title;\
+            document.getElementById('modal-desc').textContent = desc;\
+            document.getElementById('modal-img').src = imgSrc;\
+            document.getElementById('book-modal').classList.remove('hidden');\
+        \}\
+\
+        function closeBookModal() \{\
+            document.getElementById('book-modal').classList.add('hidden');\
+        \}\
+\
+        function playVideoDemo() \{\
+            window.open('https://www.youtube.com', '_blank');\
+        \}\
+\
+        function handleClubSignup(event) \{\
+            event.preventDefault();\
+            document.getElementById('paws-club-form').reset();\
+            document.getElementById('signup-success').classList.remove('hidden');\
+        \}\
+    </script>\
+</body>\
+</html>}
